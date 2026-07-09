@@ -205,18 +205,6 @@ header p{
 }
 
 /* =========================
-        GRID
-========================= */
-
-.grid{
-    max-width:800px;
-    margin:auto;
-    display:flex;
-    flex-direction:column;
-    gap:20px;
-}
-
-/* =========================
       LINK LIST
 ========================= */
 
