@@ -209,17 +209,11 @@ header p{
 ========================= */
 
 .grid{
-
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(130px,1fr));
-
-    gap:22px;
-
-    max-width:900px;
-
+    max-width:800px;
     margin:auto;
-
+    display:flex;
+    flex-direction:column;
+    gap:20px;
 }
 
 /* =========================
@@ -227,61 +221,46 @@ header p{
 ========================= */
 
 .link-card{
-
-    text-decoration:none;
-
-    color:white;
-
-    background:rgba(255,255,255,.05);
-
-    border:1px solid rgba(255,255,255,.08);
-
-    border-radius:18px;
-
-    padding:16px;
+    width:100%;
+    aspect-ratio:16/9;
 
     display:flex;
-
-    flex-direction:column;
-
     align-items:center;
 
-    transition:.35s;
+    gap:20px;
 
+    padding:18px;
+
+    text-decoration:none;
+    color:white;
+
+    background:rgba(255,255,255,.06);
     backdrop-filter:blur(12px);
 
+    border:1px solid rgba(255,255,255,.1);
+    border-radius:22px;
+
+    transition:.35s;
 }
 
 .link-card:hover{
-
-    transform:translateY(-8px);
-
+    transform:translateY(-4px);
     border-color:#5b7fff;
-
-    box-shadow:0 10px 35px rgba(91,127,255,.25);
-
+    box-shadow:0 12px 35px rgba(91,127,255,.25);
 }
 
 .link-card img{
-
-    width:90px;
-
-    height:90px;
-
+    width:40%;
+    height:100%;
     object-fit:cover;
-
-    border-radius:18px;
-
-    margin-bottom:14px;
-
+    border-radius:16px;
 }
 
 .link-card span{
-
-    font-weight:600;
-
-    text-align:center;
-
+    flex:1;
+    font-size:28px;
+    font-weight:700;
+    letter-spacing:1px;
 }
 
 /* =========================
