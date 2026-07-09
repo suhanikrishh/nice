@@ -221,8 +221,10 @@ header p{
 ========================= */
 
 .grid{
-    max-width:850px;
+    width:100%;
+    max-width:900px;
     margin:auto;
+
     display:flex;
     flex-direction:column;
     gap:22px;
@@ -233,71 +235,74 @@ header p{
 ========================= */
 
 .link-card{
-    text-decoration:none;
-    color:white;
 
     width:100%;
-    aspect-ratio:16/9;
+    aspect-ratio:16 / 9;
 
     position:relative;
-
     overflow:hidden;
 
-    border-radius:24px;
+    border-radius:22px;
 
-    border:1px solid rgba(255,255,255,.12);
+    text-decoration:none;
 
-    transition:.35s;
-
-    display:flex;
-    align-items:flex-end;
+    border:2px solid rgba(255,255,255,.12);
 
     background:#111;
+
+    transition:.35s ease;
+
+    display:block;
 }
 
 .link-card img{
-    position:absolute;
-    inset:0;
 
     width:100%;
     height:100%;
 
     object-fit:cover;
+    display:block;
 
-    transition:.45s;
-}
-
-.link-card::after{
-    content:"";
-    position:absolute;
-    inset:0;
-
-    background:linear-gradient(
-        to top,
-        rgba(0,0,0,.85),
-        rgba(0,0,0,.25),
-        transparent
-    );
+    transition:.4s;
 }
 
 .link-card span{
-    position:relative;
-    z-index:2;
+
+    position:absolute;
+
+    left:0;
+    right:0;
+    bottom:0;
+
+    padding:18px;
 
     font-size:24px;
     font-weight:700;
 
-    padding:24px;
+    color:#fff;
+
+    background:linear-gradient(
+        transparent,
+        rgba(0,0,0,.85)
+    );
+
+    text-align:left;
 }
 
 .link-card:hover{
-    transform:translateY(-6px);
-    box-shadow:0 15px 40px rgba(91,127,255,.35);
+
+    transform:scale(1.02);
+
     border-color:#5b7fff;
+
+    box-shadow:0 12px 35px rgba(91,127,255,.35);
+
 }
 
 .link-card:hover img{
-    transform:scale(1.05);
+
+    transform:scale(1.06);
+
 }
 
 /* =========================
