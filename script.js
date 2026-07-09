@@ -1,0 +1,89 @@
+/* =====================================================
+   PRIVATE LINK HUB
+   NOTE:
+   This is only client-side protection.
+   The username and password are visible in the JS file.
+   For real security, use a backend.
+===================================================== */
+
+// ===== CHANGE THESE =====
+const USERNAME = "lieblasters";
+const PASSWORD = "thrippans2026";
+
+// Show login every time the page opens/refeshes
+window.onload = () => {
+    sessionStorage.clear();
+
+    document.getElementById("loginScreen").classList.remove("hidden");
+    document.getElementById("website").classList.add("hidden");
+};
+
+// Login
+function login() {
+
+    const user = document.getElementById("username").value.trim();
+    const pass = document.getElementById("password").value;
+
+    const error = document.getElementById("error");
+
+    if (user === USERNAME && pass === PASSWORD) {
+
+        sessionStorage.setItem("loggedIn", "true");
+
+        document.getElementById("loginScreen").classList.add("hidden");
+        document.getElementById("website").classList.remove("hidden");
+
+        error.textContent = "";
+
+    } else {
+
+        error.textContent = "Invalid username or password.";
+
+        document.getElementById("password").value = "";
+
+    }
+
+}
+
+// Logout
+function logout() {
+
+    sessionStorage.clear();
+
+    document.getElementById("website").classList.add("hidden");
+    document.getElementById("loginScreen").classList.remove("hidden");
+
+    document.getElementById("username").value = "";
+    document.getElementById("password").value = "";
+
+}
+
+// Press Enter to login
+document.addEventListener("keydown", function(e) {
+
+    if (e.key === "Enter") {
+
+        login();
+
+    }
+
+});
+
+/* ===========================
+   ADD YOUR LINKS HERE
+=========================== */
+
+const links = [
+    "#",
+    "#",
+    "#",
+    "#",
+    "#",
+    "#",
+    "#",
+    "#"
+];
+
+document.querySelectorAll(".link-card").forEach((card, index) => {
+    card.href = links[index];
+});
