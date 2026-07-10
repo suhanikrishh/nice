@@ -7,8 +7,8 @@
 ===================================================== */
 
 // ===== CHANGE THESE =====
-const USERNAME = "lieblasters";
-const PASSWORD = "tharippans2026";
+const USERNAME = "gamer";
+const PASSWORD = "iamnotokbutitsfin";
 
 // Show login every time the page opens/refeshes
 window.onload = () => {
