@@ -3,40 +3,40 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>aiworld</title>
+
+<title>Secure Vault</title>
 
 <link rel="stylesheet" href="style.css">
-
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<!-- =========================
-      LOGIN SCREEN
-========================= -->
+<!-- LOGIN -->
 
 <div id="loginScreen" class="login-screen">
 
     <div class="login-card">
 
-        <div class="lock-icon">🔞</div>
+        <div class="lock-icon">🔐</div>
 
-        <h1>Link Hub</h1>
+        <h1>PREMIUM</h1>
 
-        <p>Authentication Required</p>
+        <p>Username, Password & Verification Required</p>
 
-        <input
-            id="username"
-            type="text"
-            placeholder="Username"
-            autocomplete="off">
+        <input id="username"
+               type="text"
+               placeholder="Username">
 
-        <input
-            id="password"
-            type="password"
-            placeholder="Password"
-            autocomplete="off">
+        <input id="password"
+               type="password"
+               placeholder="Password">
+
+        <input id="verificationCode"
+               type="password"
+               maxlength="6"
+               inputmode="numeric"
+               placeholder="6-Digit Verification Code">
 
         <button onclick="login()">
             Login
@@ -49,73 +49,56 @@
 </div>
 
 
-<!-- =========================
-      MAIN WEBSITE
-========================= -->
+<!-- WEBSITE -->
 
 <div id="website" class="website hidden">
 
 <header>
 
-<h1>PRIVATE LINKS</h1>
+<a href="index.html" class="top-link">Main</a>
 
-<p>Authorized Access Only</p>
+&nbsp;&nbsp;
+
+<a href="page2.html" class="top-link">Cosplay</a>
+
+<h1>SECURE VAULT</h1>
+
+<p>Authorized Users Only</p>
 
 <button class="logout-btn" onclick="logout()">
 Logout
 </button>
 
-<a href="page2.html" class="page-btn">
-Cosplays
-</a>
-
- <a href="index.html" class="page-btn">
-Main
-</a>
-
 </header>
- 
 
-      <div class="hero-info">
-    <h3>🔑 LINKS</h3>
-    <p>
-         PREMIUM
-    </p>
-      </div>
-      
 <section class="grid">
 
-<!-- Button 1 -->
-<a class="link-card" href="https://photos.app.goo.gl/iSNUPbktr3rRxjME9" target="_blank">
-    <img src="j1.jpg" alt="Link 1">
-    <span>A</span>
+<a class="link-card" href="#">
+<img src="1.png">
+<span>Secret Link 1</span>
 </a>
 
-<!-- Button 2 -->
-<a class="link-card" href="https://photos.app.goo.gl/VBdWM8AWJn1PfADX6" target="_blank">
-    <img src="j2.jpg" alt="Link 1">
-    <span>Blast:A</span>
+<a class="link-card" href="#">
+<img src="2.png">
+<span>Secret Link 2</span>
 </a>
 
-<!-- Button 3 -->
-<a class="link-card" href="https://photos.app.goo.gl/sqLAevs9Htcpe7NC6" target="_blank">
-    <img src="j3.jpg" alt="Link 1">
-    <span>A:52</span>
+<a class="link-card" href="#">
+<img src="3.png">
+<span>Secret Link 3</span>
 </a>
 
-<!-- Button 4 -->
-<a class="link-card" href="https://photos.app.goo.gl/JLZmdyVPPXc9Uc5b6" target="_blank">
-    <img src="j4.jpg" alt="Link 1">
-    <span>Nabie?</span>
+<a class="link-card" href="#">
+<img src="4.png">
+<span>Secret Link 4</span>
 </a>
+
 
 </section>
 
 <footer>
 
-<p>
-© Exclusive
-</p>
+<p>© PREMIUM</p>
 
 </footer>
 
