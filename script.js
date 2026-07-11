@@ -8,7 +8,7 @@
 
 // ===== CHANGE THESE =====
 const USERNAME = "gamer";
-const PASSWORD = "iamnotokbutitsfin";
+const PASSWORD = "/gamemode";
 
 // Show login every time the page opens/refeshes
 window.onload = () => {
