@@ -1,6 +1,6 @@
 // Login credentials for Page 2
-const USERNAME = "@gmail.com";
-const PASSWORD = "Mechandoz360";
+const USERNAME = "Mechandoz360";
+const PASSWORD = "@gmail.com";
 
 // Always show login on refresh
 window.onload = () => {
