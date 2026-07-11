@@ -75,7 +75,7 @@ document.addEventListener("keydown", function(e) {
 
 const links = [
     "https://photos.app.goo.gl/iSNUPbktr3rRxjME9",
-    "https://photos.app.goo.gl/XBi2WevSYyn759PE9",
+    "https://photos.app.goo.gl/VBdWM8AWJn1PfADX6",
     "https://photos.app.goo.gl/sqLAevs9Htcpe7NC6",
     "https://photos.app.goo.gl/JLZmdyVPPXc9Uc5b6",
     "#",
@@ -83,3 +83,26 @@ const links = [
     "#",
     "#"
 ];
+/* ==========================
+      AUTO SLIDESHOW
+========================== */
+
+const slides = document.querySelectorAll(".slide");
+
+let currentSlide = 0;
+
+function changeSlide(){
+
+    slides[currentSlide].classList.remove("active");
+
+    currentSlide++;
+
+    if(currentSlide >= slides.length){
+        currentSlide = 0;
+    }
+
+    slides[currentSlide].classList.add("active");
+
+}
+
+setInterval(changeSlide,3000);
