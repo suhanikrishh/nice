@@ -438,3 +438,24 @@ height:80px;
     transform:scale(1);
 
 }
+
+.hero-text,
+.hero-info{
+    max-width:360px;
+    margin:0 auto 20px;
+    text-align:center;
+}
+
+.hero-text h2,
+.hero-info h3{
+    font-size:24px;
+    font-weight:700;
+    margin-bottom:8px;
+}
+
+.hero-text p,
+.hero-info p{
+    color:#b8b8b8;
+    line-height:1.6;
+    font-size:15px;
+   }
