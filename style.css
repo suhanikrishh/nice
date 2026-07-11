@@ -459,3 +459,17 @@ height:80px;
     line-height:1.6;
     font-size:15px;
    }
+
+.top-link{
+    display:inline-block;
+    margin-bottom:18px;
+    color:#7ea7ff;
+    text-decoration:none;
+    font-size:14px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.top-link:hover{
+    color:#ffffff;
+   }
