@@ -460,16 +460,21 @@ height:80px;
     font-size:15px;
    }
 
-.top-link{
+.page-btn{
     display:inline-block;
-    margin-bottom:18px;
-    color:#7ea7ff;
+    margin-top:20px;
+    margin-right:10px;
+    padding:10px 20px;
+    border:none;
+    border-radius:10px;
+    background:#5b7fff;
+    color:#fff;
     text-decoration:none;
-    font-size:14px;
-    font-weight:600;
+    cursor:pointer;
     transition:.3s;
 }
 
-.top-link:hover{
-    color:#ffffff;
-   }
+.page-btn:hover{
+    background:#7593ff;
+    transform:translateY(-2px);
+}
