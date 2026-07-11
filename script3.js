@@ -1,12 +1,10 @@
-// Login credentials for Page 3
-const USERNAME = "@gmail.com";
+/* ===== Demo Credentials ===== */
+const USERNAME = "Mechandoz360";
 const PASSWORD = "iamnotokbutitsfin";
 const VERIFICATION_CODE = "499808";
 
-// Always show login on refresh
+/* Show login every refresh */
 window.onload = () => {
-    sessionStorage.clear();
-
     document.getElementById("loginScreen").classList.remove("hidden");
     document.getElementById("website").classList.add("hidden");
 };
@@ -27,11 +25,12 @@ function login() {
 
         document.getElementById("loginScreen").classList.add("hidden");
         document.getElementById("website").classList.remove("hidden");
+
         error.textContent = "";
 
     } else {
 
-        error.textContent = "Invalid username, password, or verification code.";
+        error.textContent = "Invalid username, password or verification code.";
 
         document.getElementById("password").value = "";
         document.getElementById("verificationCode").value = "";
@@ -47,8 +46,24 @@ function logout() {
 
     document.getElementById("username").value = "";
     document.getElementById("password").value = "";
+    document.getElementById("verificationCode").value = "";
+
 }
 
 document.addEventListener("keydown", function(e) {
-    if (e.key === "Enter") login();
+    if (e.key === "Enter") {
+        login();
+    }
 });
+
+/* Replace these with your real URLs */
+const links = [
+    "#",
+    "#",
+    "#",
+    "#",
+    "#",
+    "#",
+    "#",
+    "#"
+];
