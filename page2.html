@@ -12,7 +12,48 @@
 
 <body>
 
+<!-- =========================
+      LOGIN SCREEN
+========================= -->
 
+<div id="loginScreen" class="login-screen">
+
+    <div class="login-card">
+
+        <div class="lock-icon">⚠️</div>
+
+        <h1>Cosplay Hub</h1>
+
+        <p>Authentication Required</p>
+
+        <input
+            id="username"
+            type="text"
+            placeholder="Username"
+            autocomplete="off">
+
+        <input
+            id="password"
+            type="password"
+            placeholder="Password"
+            autocomplete="off">
+
+        <button onclick="login()">
+            Login
+        </button>
+
+        <div id="error" class="error"></div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+      MAIN WEBSITE
+========================= -->
+
+<div id="website" class="website hidden">
 
 <header>
 
